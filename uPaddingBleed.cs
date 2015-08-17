@@ -8,8 +8,11 @@ public static class uPaddingBleed
         public int minX, maxX, minY, maxY, width, height;
     }
 
-    public static Texture2D BleedEdges(Texture2D texture, int padding, Rect[] texturePositions, bool repeatingTextures)
+    public static void BleedEdges(Texture2D texture, int padding, Rect[] texturePositions, bool repeatingTextures)
     {
+        if (padding == 0)
+            return;
+
         padding /= 2;
 
         Tile tile = new Tile();
@@ -111,7 +114,6 @@ public static class uPaddingBleed
         }
 
         texture.Apply();
-        return texture;
     }
 
     static int OffsetPos(int pos, int offset, int max)
