@@ -12,7 +12,9 @@ uPaddingBleed.BleedEdges(atlas, 32, rects, repeatingTextures: true);
 Pass it the texture, the padding amount, some or all of the rects to apply padding fill to and lastly whether or not to repeat the texture or stretch the edges.
 
 Repeat padding:
+
 ![Repeat padding](http://alexstv.com/images/repeat_padding.png)
 
 Bleed padding:
+
 ![Repeat padding](http://alexstv.com/images/bleed_padding.png)
